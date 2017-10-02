@@ -36,9 +36,9 @@ Toast.prototype = {
             }
         }, false)
 
-        // setTimeout(() => {
-        //     pNode.parentNode.removeChild(pNode)
-        // }, obj.duration || this.duration)
+        setTimeout(() => {
+            pNode.parentNode.removeChild(pNode)
+        }, obj.duration || this.duration)
     },
     close() {
         let pNode = document.getElementById('toast')
