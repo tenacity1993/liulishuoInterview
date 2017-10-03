@@ -9,6 +9,19 @@ const originalData = [
 // 比如
 // returns { math: { 0: 73, 1: 82 }, english: { 0: 65, 1: 43 } }
 function cal(age){
+    if(!age) {
+        console.log('未输入筛选条件')
+         return
+    } else {
+        age = parseInt(age)
+        if(isNaN(age)) {
+            console.log('筛选条件输入错误')
+            return
+        } else if(age <= 0 || age >= 50){
+            console.log('参数范围不符合实际')
+            return
+        }
+    }
     let res = {}   
     let filterMath = []
     let avgMath0 = 0
@@ -72,4 +85,4 @@ function cal(age){
    console.log(res)
 
 }
-cal(30)
+cal('30')

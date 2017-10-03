@@ -37,7 +37,9 @@ Toast.prototype = {
         }, false)
 
         setTimeout(() => {
-            pNode.parentNode.removeChild(pNode)
+            if(pNode) {
+                pNode.parentNode.removeChild(pNode)
+            }
         }, obj.duration || this.duration)
     },
     close() {
