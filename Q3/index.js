@@ -36,11 +36,11 @@ Toast.prototype = {
             }
         }, false)
 
-        setTimeout(() => {
+        /*setTimeout(() => {
             if(pNode) {
                 pNode.parentNode.removeChild(pNode)
             }
-        }, obj.duration || this.duration)
+        }, obj.duration || this.duration)*/
     },
     close() {
         let pNode = document.getElementById('toast')
@@ -49,7 +49,7 @@ Toast.prototype = {
 }
 
 let toast = new Toast()
-toast.show('系统异常')
+toast.show()
 /*setTimeout(() => {
     toast.close()
 }, 3000)*/
