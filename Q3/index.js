@@ -36,11 +36,11 @@ Toast.prototype = {
             }
         }, false)
 
-        /*setTimeout(() => {
+        setTimeout(() => {
             if(pNode) {
                 pNode.parentNode.removeChild(pNode)
             }
-        }, obj.duration || this.duration)*/
+        }, obj.duration || this.duration)
     },
     close() {
         let pNode = document.getElementById('toast')
